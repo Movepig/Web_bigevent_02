@@ -31,7 +31,7 @@ function getUserInfo() {
         },
         //无论成功或者失败，都会触发complete方法
         complete: function (res) {
-            console.log(res);
+            // console.log(res);
             if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
                 //1.删除本地token
                 localStorage.removeItem('token');
